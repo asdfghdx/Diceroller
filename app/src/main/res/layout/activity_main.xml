@@ -4,15 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6103A9F4"
+    android:fadingEdge="horizontal|vertical"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/tvSymbol2"
+        android:layout_width="28dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/tvDice1"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultLabel" />
+
+    <TextView
+        android:id="@+id/tvDice2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="12dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/tvSymbol2"
+        app:layout_constraintTop_toTopOf="@+id/tvSymbol2" />
+
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice_2" />
+
+    <Button
+        android:id="@+id/btnDiceRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:background="#DEDEDE"
+        android:fontFamily="@font/adamina"
+        android:text="Roll Dice"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvResultLabel"
+        android:layout_width="92dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="328dp"
+        android:background="#0004ACF8"
+        android:fadingEdge="horizontal|vertical"
+        android:text="Results:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDice1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/tvResultLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultLabel" />
+
+    <TextView
+        android:id="@+id/tvSymbol"
+        android:layout_width="28dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:text="="
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/tvDice2"
+        app:layout_constraintTop_toTopOf="@+id/tvSymbol2" />
+
+    <TextView
+        android:id="@+id/tvSum"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/tvSymbol"
+        app:layout_constraintTop_toTopOf="@+id/tvSymbol" />
 </androidx.constraintlayout.widget.ConstraintLayout>
