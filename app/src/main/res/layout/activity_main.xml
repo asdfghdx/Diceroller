@@ -28,7 +28,9 @@
         android:layout_height="75dp"
         android:layout_marginStart="12dp"
         android:text="TextView"
+        android:textAlignment="center"
         android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/tvSymbol2"
         app:layout_constraintTop_toTopOf="@+id/tvSymbol2" />
 
@@ -90,7 +92,9 @@
         android:layout_height="75dp"
         android:layout_marginTop="40dp"
         android:text="TextView"
+        android:textAlignment="center"
         android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/tvResultLabel"
         app:layout_constraintTop_toBottomOf="@+id/tvResultLabel" />
 
@@ -112,7 +116,9 @@
         android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:text="TextView"
+        android:textAlignment="center"
         android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/tvSymbol"
         app:layout_constraintTop_toTopOf="@+id/tvSymbol" />
 </androidx.constraintlayout.widget.ConstraintLayout>
